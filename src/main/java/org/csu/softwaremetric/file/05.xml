@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_kkgsMBeLEd60N8ipLbB6nA" name="remotecontrol">
+  <packagedElement xmi:type="uml:Association" xmi:id="_WUqecMhkEeyCqMLO5LyFKw" name="association6" memberEnd="_WU9ZYMhkEeyCqMLO5LyFKw _WW0akMhkEeyCqMLO5LyFKw" navigableOwnedEnd="_WW0akMhkEeyCqMLO5LyFKw">
+    <ownedEnd xmi:id="_WU9ZYMhkEeyCqMLO5LyFKw" name="" visibility="public" type="_WYOIwMhkEeyCqMLO5LyFKw" association="_WUqecMhkEeyCqMLO5LyFKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WWsewMhkEeyCqMLO5LyFKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WWqCgMhkEeyCqMLO5LyFKw"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_WW0akMhkEeyCqMLO5LyFKw" name="" visibility="public" type="_WgabcMhkEeyCqMLO5LyFKw" aggregation="shared" association="_WUqecMhkEeyCqMLO5LyFKw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WXAn0MhkEeyCqMLO5LyFKw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WXAAwMhkEeyCqMLO5LyFKw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WYOIwMhkEeyCqMLO5LyFKw" name="RemoteControl">
+    <ownedAttribute xmi:id="_WeAnsMhkEeyCqMLO5LyFKw" name="command" visibility="private" type="_WgabcMhkEeyCqMLO5LyFKw"/>
+    <ownedAttribute xmi:id="_WeH8cMhkEeyCqMLO5LyFKw" name="commanMap" visibility="private" type="_WeLm0MhkEeyCqMLO5LyFKw"/>
+    <ownedOperation xmi:id="_WexcsMhkEeyCqMLO5LyFKw" name="setCommand" visibility="public" bodyCondition="_We70wMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_We70wMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_We-RAMhkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_WfnxQMhkEeyCqMLO5LyFKw" name="i" type="_WfvGAMhkEeyCqMLO5LyFKw"/>
+      <ownedParameter xmi:id="_WfvtEMhkEeyCqMLO5LyFKw" name="com" type="_WfzXcMhkEeyCqMLO5LyFKw"/>
+      <ownedParameter xmi:id="_Wf0lkMhkEeyCqMLO5LyFKw" name="setCommand" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Wf3B0MhkEeyCqMLO5LyFKw" name="onClick" visibility="public" bodyCondition="_Wf6sMMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wf6sMMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wf6sMchkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_WgAy0MhkEeyCqMLO5LyFKw" name="i" type="_WfvGAMhkEeyCqMLO5LyFKw"/>
+      <ownedParameter xmi:id="_WgDPEMhkEeyCqMLO5LyFKw" name="onClick" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_WgEdMMhkEeyCqMLO5LyFKw" name="offClick" visibility="public" bodyCondition="_WgHggMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_WgHggMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_WgHggchkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_WgNAEMhkEeyCqMLO5LyFKw" name="i" type="_WfvGAMhkEeyCqMLO5LyFKw"/>
+      <ownedParameter xmi:id="_WgPcUMhkEeyCqMLO5LyFKw" name="offClick" type="_WgQDYMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_WeLm0MhkEeyCqMLO5LyFKw" name="Map&lt;Integer, Command>"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_WfvGAMhkEeyCqMLO5LyFKw" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_WfzXcMhkEeyCqMLO5LyFKw" name="Comand"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Wf1MoMhkEeyCqMLO5LyFKw" name="void"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_WgQDYMhkEeyCqMLO5LyFKw" name="ivoidnt"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WgabcMhkEeyCqMLO5LyFKw" name="Command" isAbstract="true">
+    <ownedOperation xmi:id="_Wg2gUMhkEeyCqMLO5LyFKw" name="turnOn" visibility="public" bodyCondition="_Wg5joMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wg5joMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wg5jochkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Wg7_4MhkEeyCqMLO5LyFKw" name="turnOn" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Wg91EMhkEeyCqMLO5LyFKw" name="turnOff" visibility="public" bodyCondition="_WhBfcMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_WhBfcMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_WhBfcchkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_WhD7sMhkEeyCqMLO5LyFKw" name="turnOff" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WhNFoMhkEeyCqMLO5LyFKw" name="RoomoneCommand">
+    <generalization xmi:id="_WhYEwMhkEeyCqMLO5LyFKw" general="_WgabcMhkEeyCqMLO5LyFKw"/>
+    <ownedAttribute xmi:id="_WhmuQMhkEeyCqMLO5LyFKw" name="rone1" visibility="private" type="_Whn8YMhkEeyCqMLO5LyFKw"/>
+    <ownedOperation xmi:id="_Wh7eYMhkEeyCqMLO5LyFKw" name="turnOn" visibility="public" bodyCondition="_Wh9TkMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wh9TkMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wh96oMhkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_WiAW4MhkEeyCqMLO5LyFKw" name="turnOn" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_WiBlAMhkEeyCqMLO5LyFKw" name="turnOff" visibility="public" bodyCondition="_WiDaMMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_WiDaMMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_WiDaMchkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_WiGdgMhkEeyCqMLO5LyFKw" name="turnOff" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Whn8YMhkEeyCqMLO5LyFKw" name="RomeOne"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WiPAYMhkEeyCqMLO5LyFKw" name="RoomTwoCommand">
+    <generalization xmi:id="_WiVHAMhkEeyCqMLO5LyFKw" general="_WgabcMhkEeyCqMLO5LyFKw"/>
+    <ownedAttribute xmi:id="_WihUQMhkEeyCqMLO5LyFKw" name="rome2" visibility="private" type="_WijJcMhkEeyCqMLO5LyFKw"/>
+    <ownedOperation xmi:id="_Wi35kMhkEeyCqMLO5LyFKw" name="turnOn" visibility="public" bodyCondition="_Wi6V0MhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wi6V0MhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wi6V0chkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Wi9ZIMhkEeyCqMLO5LyFKw" name="turnOn" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Wi_OUMhkEeyCqMLO5LyFKw" name="turnOff" visibility="public" bodyCondition="_WjBDgMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_WjBDgMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_WjBqkMhkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_WjEG0MhkEeyCqMLO5LyFKw" name="turnOff" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_WijJcMhkEeyCqMLO5LyFKw" name="RomeTwo"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WjN30MhkEeyCqMLO5LyFKw" name="RoomThreeCommand">
+    <generalization xmi:id="_WjT-cMhkEeyCqMLO5LyFKw" general="_WgabcMhkEeyCqMLO5LyFKw"/>
+    <ownedAttribute xmi:id="_WjgywMhkEeyCqMLO5LyFKw" name="rome3" visibility="private" type="_WjiA4MhkEeyCqMLO5LyFKw"/>
+    <ownedOperation xmi:id="_Wj3YEMhkEeyCqMLO5LyFKw" name="turnOn" visibility="public" bodyCondition="_Wj5NQMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wj5NQMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wj50UMhkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Wj8QkMhkEeyCqMLO5LyFKw" name="turnOn" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Wj9esMhkEeyCqMLO5LyFKw" name="turnOff" visibility="public" bodyCondition="_Wj_68MhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wj_68MhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wj_68chkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_WkCXMMhkEeyCqMLO5LyFKw" name="turnOff" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_WjiA4MhkEeyCqMLO5LyFKw" name="RomeThree"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WkMvQMhkEeyCqMLO5LyFKw" name="RoomFourCommand">
+    <generalization xmi:id="_WkUEAMhkEeyCqMLO5LyFKw" general="_WgabcMhkEeyCqMLO5LyFKw"/>
+    <ownedAttribute xmi:id="_WkfqMMhkEeyCqMLO5LyFKw" name="rome4" visibility="private" type="_Wkg4UMhkEeyCqMLO5LyFKw"/>
+    <ownedOperation xmi:id="_WkzzQMhkEeyCqMLO5LyFKw" name="turnOn" visibility="public" bodyCondition="_Wk2PgMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wk2PgMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wk2PgchkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Wk5S0MhkEeyCqMLO5LyFKw" name="turnOn" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Wk7IAMhkEeyCqMLO5LyFKw" name="turnOff" visibility="public" bodyCondition="_Wk89MMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wk89MMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wk89MchkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Wk_ZcMhkEeyCqMLO5LyFKw" name="turnOff" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Wkg4UMhkEeyCqMLO5LyFKw" name="RomeFour"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WlJKcMhkEeyCqMLO5LyFKw" name="RoomFiveCommand">
+    <generalization xmi:id="_WlP4IMhkEeyCqMLO5LyFKw" general="_WgabcMhkEeyCqMLO5LyFKw"/>
+    <ownedAttribute xmi:id="_WlcscMhkEeyCqMLO5LyFKw" name="rome5" visibility="private" type="_WldTgMhkEeyCqMLO5LyFKw"/>
+    <ownedOperation xmi:id="_WlyDoMhkEeyCqMLO5LyFKw" name="turnOn" visibility="public" bodyCondition="_Wl0f4MhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wl0f4MhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wl0f4chkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Wl3jMMhkEeyCqMLO5LyFKw" name="turnOn" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Wl5YYMhkEeyCqMLO5LyFKw" name="turnOff" visibility="public" bodyCondition="_Wl7NkMhkEeyCqMLO5LyFKw">
+      <ownedRule xmi:id="_Wl7NkMhkEeyCqMLO5LyFKw">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Wl7NkchkEeyCqMLO5LyFKw" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Wl-Q4MhkEeyCqMLO5LyFKw" name="turnOff" type="_Wf1MoMhkEeyCqMLO5LyFKw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_WldTgMhkEeyCqMLO5LyFKw" name="RomeFive"/>
+</uml:Model>

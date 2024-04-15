@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_kkgsMBeLEd60N8ipLbB6nA" name="07">
+  <packagedElement xmi:type="uml:Association" xmi:id="_n1ulsIdtEeq2MLbT3lTRFA" name="association1" memberEnd="_n2HnQIdtEeq2MLbT3lTRFA _n5xYMIdtEeq2MLbT3lTRFA" navigableOwnedEnd="_n5xYMIdtEeq2MLbT3lTRFA">
+    <ownedEnd xmi:id="_n2HnQIdtEeq2MLbT3lTRFA" name="" visibility="public" type="_n8df0IdtEeq2MLbT3lTRFA" association="_n1ulsIdtEeq2MLbT3lTRFA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n5frYIdtEeq2MLbT3lTRFA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n5WhcIdtEeq2MLbT3lTRFA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_n5xYMIdtEeq2MLbT3lTRFA" name="" visibility="public" type="_oIQgIIdtEeq2MLbT3lTRFA" association="_n1ulsIdtEeq2MLbT3lTRFA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n6NdEIdtEeq2MLbT3lTRFA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n6M2AIdtEeq2MLbT3lTRFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_n6V_8IdtEeq2MLbT3lTRFA" name="association2" memberEnd="_n6XOEIdtEeq2MLbT3lTRFA _n6jbUIdtEeq2MLbT3lTRFA" navigableOwnedEnd="_n6jbUIdtEeq2MLbT3lTRFA">
+    <ownedEnd xmi:id="_n6XOEIdtEeq2MLbT3lTRFA" name="" visibility="public" type="_oG5OMIdtEeq2MLbT3lTRFA" association="_n6V_8IdtEeq2MLbT3lTRFA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n6ctoYdtEeq2MLbT3lTRFA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n6ctoIdtEeq2MLbT3lTRFA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_n6jbUIdtEeq2MLbT3lTRFA" name="" visibility="public" type="_oIQgIIdtEeq2MLbT3lTRFA" association="_n6V_8IdtEeq2MLbT3lTRFA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n6lQgYdtEeq2MLbT3lTRFA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n6lQgIdtEeq2MLbT3lTRFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_n6qwEIdtEeq2MLbT3lTRFA" name="association3" memberEnd="_n6rXIIdtEeq2MLbT3lTRFA _n6zS8IdtEeq2MLbT3lTRFA" navigableOwnedEnd="_n6zS8IdtEeq2MLbT3lTRFA">
+    <ownedEnd xmi:id="_n6rXIIdtEeq2MLbT3lTRFA" name="" visibility="public" type="_oKMZ0IdtEeq2MLbT3lTRFA" association="_n6qwEIdtEeq2MLbT3lTRFA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n6vokYdtEeq2MLbT3lTRFA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n6vokIdtEeq2MLbT3lTRFA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_n6zS8IdtEeq2MLbT3lTRFA" name="" visibility="public" type="_oNpWcIdtEeq2MLbT3lTRFA" aggregation="shared" association="_n6qwEIdtEeq2MLbT3lTRFA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n63kYYdtEeq2MLbT3lTRFA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n63kYIdtEeq2MLbT3lTRFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_n8df0IdtEeq2MLbT3lTRFA" name="OnCommand">
+    <generalization xmi:id="_oCku4IdtEeq2MLbT3lTRFA" general="_oNpWcIdtEeq2MLbT3lTRFA"/>
+    <ownedAttribute xmi:id="_oEtc4IdtEeq2MLbT3lTRFA" name="light" visibility="private" type="_oIQgIIdtEeq2MLbT3lTRFA"/>
+    <ownedOperation xmi:id="_oFYyUIdtEeq2MLbT3lTRFA" name="OnCommand" visibility="public" bodyCondition="_oFk_kIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oFk_kIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oFop8IdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oGdwYIdtEeq2MLbT3lTRFA" name="light" type="_oIQgIIdtEeq2MLbT3lTRFA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oG5OMIdtEeq2MLbT3lTRFA" name="OffCommand">
+    <generalization xmi:id="_oHC_MIdtEeq2MLbT3lTRFA" general="_oNpWcIdtEeq2MLbT3lTRFA"/>
+    <ownedAttribute xmi:id="_oHV6IIdtEeq2MLbT3lTRFA" name="light" visibility="private" type="_oIQgIIdtEeq2MLbT3lTRFA"/>
+    <ownedOperation xmi:id="_oHwJ0IdtEeq2MLbT3lTRFA" name="OffCommand" visibility="public" bodyCondition="_oH1pYIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oH1pYIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oH1pYYdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oH9lMIdtEeq2MLbT3lTRFA" name="light" type="_oIQgIIdtEeq2MLbT3lTRFA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oIQgIIdtEeq2MLbT3lTRFA" name="Light">
+    <ownedAttribute xmi:id="_oIkpMIdtEeq2MLbT3lTRFA" name="name" visibility="private" type="_oIqv0IdtEeq2MLbT3lTRFA"/>
+    <ownedOperation xmi:id="_oJRz0IdtEeq2MLbT3lTRFA" name="Light" visibility="public" bodyCondition="_oJXTYIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oJXTYIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oJXTYYdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oJf2QIdtEeq2MLbT3lTRFA" name="name" type="_oIqv0IdtEeq2MLbT3lTRFA"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_oJmj8IdtEeq2MLbT3lTRFA" name="on" visibility="public" bodyCondition="_oJqOUIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oJqOUIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oJq1YIdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oJufwIdtEeq2MLbT3lTRFA" name="on" type="_oJwU8IdtEeq2MLbT3lTRFA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_oJyxMIdtEeq2MLbT3lTRFA" name="off" visibility="public" bodyCondition="_oJ3psIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oJ3psIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oJ4QwIdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oJ8iMIdtEeq2MLbT3lTRFA" name="off" type="_oJwU8IdtEeq2MLbT3lTRFA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_oIqv0IdtEeq2MLbT3lTRFA" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_oJwU8IdtEeq2MLbT3lTRFA" name="void"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oKMZ0IdtEeq2MLbT3lTRFA" name="Controller">
+    <ownedAttribute xmi:id="_oKk0UIdtEeq2MLbT3lTRFA" name="onCommands" visibility="private" type="_oKnQkIdtEeq2MLbT3lTRFA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oKmCcIdtEeq2MLbT3lTRFA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oKmCcYdtEeq2MLbT3lTRFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oKriAIdtEeq2MLbT3lTRFA" name="offCommands" visibility="private" type="_oKnQkIdtEeq2MLbT3lTRFA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oKsJEIdtEeq2MLbT3lTRFA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oKswIIdtEeq2MLbT3lTRFA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oLTNEIdtEeq2MLbT3lTRFA" name="Controller" visibility="public" bodyCondition="_oLYFkIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oLYFkIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oLYFkYdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+    </ownedOperation>
+    <ownedOperation xmi:id="_oLeMMIdtEeq2MLbT3lTRFA" name="setCommand" visibility="public" bodyCondition="_oLh2kIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oLh2kIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oLidoIdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oLwgEIdtEeq2MLbT3lTRFA" name="slot" type="_oL1_oIdtEeq2MLbT3lTRFA"/>
+      <ownedParameter xmi:id="_oL3NwIdtEeq2MLbT3lTRFA" name="onCommand" type="_oKnQkIdtEeq2MLbT3lTRFA"/>
+      <ownedParameter xmi:id="_oL8tUIdtEeq2MLbT3lTRFA" name="offCommand" type="_oKnQkIdtEeq2MLbT3lTRFA"/>
+      <ownedParameter xmi:id="_oMBl0IdtEeq2MLbT3lTRFA" name="setCommand" type="_oJwU8IdtEeq2MLbT3lTRFA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_oMDbAIdtEeq2MLbT3lTRFA" name="pushOn" visibility="public" bodyCondition="_oMITgIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oMITgIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oMITgYdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oMQ2YIdtEeq2MLbT3lTRFA" name="slot" type="_oL1_oIdtEeq2MLbT3lTRFA"/>
+      <ownedParameter xmi:id="_oMUgwIdtEeq2MLbT3lTRFA" name="pushOn" type="_oJwU8IdtEeq2MLbT3lTRFA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_oMW9AIdtEeq2MLbT3lTRFA" name="pushOff" visibility="public" bodyCondition="_oMb1gIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oMb1gIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oMb1gYdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oMjxUIdtEeq2MLbT3lTRFA" name="slot" type="_oL1_oIdtEeq2MLbT3lTRFA"/>
+      <ownedParameter xmi:id="_oMnbsIdtEeq2MLbT3lTRFA" name="pushOff" type="_oJwU8IdtEeq2MLbT3lTRFA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_oKnQkIdtEeq2MLbT3lTRFA" name="Command"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_oL1_oIdtEeq2MLbT3lTRFA" name="int"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oM2FMIdtEeq2MLbT3lTRFA" name="Client" clientDependency="_oPgXoIdtEeq2MLbT3lTRFA _oPmeQIdtEeq2MLbT3lTRFA _oPphkIdtEeq2MLbT3lTRFA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oNpWcIdtEeq2MLbT3lTRFA" name="Command">
+    <ownedOperation xmi:id="_oOPMUIdtEeq2MLbT3lTRFA" name="execute" visibility="public" bodyCondition="_oOS2sIdtEeq2MLbT3lTRFA">
+      <ownedRule xmi:id="_oOS2sIdtEeq2MLbT3lTRFA">
+        <specification xmi:type="uml:LiteralString" xmi:id="_oOTdwIdtEeq2MLbT3lTRFA" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_oOXIIIdtEeq2MLbT3lTRFA" name="execute" type="_oJwU8IdtEeq2MLbT3lTRFA" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oPgXoIdtEeq2MLbT3lTRFA" name="Dependency_1" supplier="_oKMZ0IdtEeq2MLbT3lTRFA" client="_oM2FMIdtEeq2MLbT3lTRFA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oPmeQIdtEeq2MLbT3lTRFA" name="Dependency_3" supplier="_oG5OMIdtEeq2MLbT3lTRFA" client="_oM2FMIdtEeq2MLbT3lTRFA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oPphkIdtEeq2MLbT3lTRFA" name="Dependency_4" supplier="_n8df0IdtEeq2MLbT3lTRFA" client="_oM2FMIdtEeq2MLbT3lTRFA"/>
+</uml:Model>
