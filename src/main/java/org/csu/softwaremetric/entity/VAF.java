@@ -48,4 +48,36 @@ public class VAF {
         facilitation = 0;
     }
 
+    public VAF(int recovery, int communication, int distribute, int performance, int operation, int online, int multiple,
+               int update, int complex, int interComplex, int reuse, int installation, int multiplePoints, int facilitation) {
+        // 系统恢复
+        this.recovery = recovery;
+        // 数据通讯
+        this.communication = communication;
+        // 分布式数据处理
+        this.distribute = distribute;
+        // 性能
+        this.performance = performance;
+        // 资源需求
+        this.operation = operation;
+        // 在线数据输入
+        this.online = online;
+        // 多点运行
+        this.multiple = multiple;
+        // 在线升级
+        this.update = update;
+        // 复杂处理
+        this.complex = complex;
+        // 内部处理复杂
+        this.interComplex = interComplex;
+        // 可重用性
+        this.reuse = reuse;
+        // 易安装性
+        this.installation = installation;
+        // 多点运行
+        this.multiplePoints = multiplePoints;
+        // 易变性
+        this.facilitation = facilitation;
+    }
+
 }
