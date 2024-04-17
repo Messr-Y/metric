@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class FPService {
     public int calUFC(UFC ufc){
-        int ei = ufc.getNumEI() * ufc.getEI().get(1).intValue();
-        int eq = ufc.getNumEQ() * ufc.getEQ().get(1).intValue();
-        int eo = ufc.getNumEO() * ufc.getEO().get(1).intValue();
-        int eif = ufc.getNumEIF() * ufc.getEIF().get(1).intValue();
-        int ilf = ufc.getNumILF() * ufc.getILF().get(1).intValue();
+        int ei = ufc.getNumEI() * ufc.getEI();
+        int eq = ufc.getNumEQ() * ufc.getEQ();
+        int eo = ufc.getNumEO() * ufc.getEO();
+        int eif = ufc.getNumEIF() * ufc.getEIF();
+        int ilf = ufc.getNumILF() * ufc.getILF();
         return ei + eq + eo + eif + eif + ilf;
     }
 
