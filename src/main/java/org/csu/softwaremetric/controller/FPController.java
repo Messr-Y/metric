@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FPController {
     @Autowired
     private FPService fpService;
-    @PostMapping
+    @PostMapping("/getFP")
     CommonResponse calFP(@RequestBody UFC ufc, @RequestBody VAF vaf){
         return CommonResponse.createForSuccess(fpService.calFP(ufc, vaf));
     }

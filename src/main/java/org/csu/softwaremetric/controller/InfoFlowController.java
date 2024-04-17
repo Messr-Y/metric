@@ -61,9 +61,9 @@ public class InfoFlowController {
         return CommonResponse.createForSuccess(methods);
     }
 
-    @GetMapping("/getCycleComplexity")
+    @GetMapping("/getInfoFlow")
     @ResponseBody
-    public CommonResponse getCycleComplexity() {
+    public CommonResponse getInfoFlow() {
         String filename = String.valueOf(dest);
         List<InfoFlow> methods = infoFlowService.getInfoFlows(filename);
 
