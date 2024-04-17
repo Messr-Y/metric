@@ -15,6 +15,7 @@ public class VAF {
     private int reuse;
     private int installation;
     private int facilitation;
+    private int multiplePoints;
 
     public VAF() {
         // 系统恢复
@@ -41,6 +42,8 @@ public class VAF {
         reuse = 0;
         // 易安装性
         installation = 0;
+        // 多点运行
+        multiplePoints = 0;
         // 易变性
         facilitation = 0;
     }

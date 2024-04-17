@@ -5,14 +5,21 @@ import java.util.ArrayList;
 @Data
 public class UFC {
     // <Simple, Ave, Complex>
-    private int EI;
-    private int EO;
-    private int EQ;
-    private int EIF;
-    private int ILF;
-    private int numEI;
-    private int numEO;
-    private int numEQ;
-    private int numEIF;
-    private int numILF;
+    private int EI1;
+    private int EO1;
+    private int EQ1;
+    private int EIF1;
+    private int ILF1;
+
+    private int EI2;
+    private int EO2;
+    private int EQ2;
+    private int EIF2;
+    private int ILF2;
+
+    private int EI3;
+    private int EO3;
+    private int EQ3;
+    private int EIF3;
+    private int ILF3;
 }
