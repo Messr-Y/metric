@@ -5,10 +5,15 @@ import java.util.ArrayList;
 @Data
 public class UFC {
     // <Simple, Ave, Complex>
+    // 外部输入
     private int EI1;
+    // 外部输出
     private int EO1;
+    // 外部查询
     private int EQ1;
+    // 内部文件
     private int EIF1;
+    // 外部接口
     private int ILF1;
 
     private int EI2;
