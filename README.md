@@ -10,3 +10,8 @@ JDK: 17
 
 启动项目时保证先启动后端，再启动前端
 
+## 项目地址
+
+后端地址：https://github.com/Messr-Y/metric
+
+前端地址：https://github.com/ReturnTmp/vue-manage-system-metrics
