@@ -99,7 +99,7 @@ public class TXTController {
             }
         }
 
-        CycleCom cycleCom = new CycleCom(codeLines, blankLines, commentLines, cycleComplexity + 1);
+        CycleCom cycleCom = new CycleCom(codeLines, commentLines, blankLines, cycleComplexity + 1);
         return CommonResponse.createForSuccess(cycleCom);
     }
 
