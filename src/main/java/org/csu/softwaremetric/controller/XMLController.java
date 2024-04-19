@@ -6,6 +6,7 @@ import org.csu.softwaremetric.entity.BasicInfo;
 import org.csu.softwaremetric.entity.CK;
 import org.csu.softwaremetric.entity.Classes;
 import org.csu.softwaremetric.entity.LK;
+import org.csu.softwaremetric.service.InfoFlowService;
 import org.csu.softwaremetric.service.InfoService;
 import org.csu.softwaremetric.service.XMLService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,6 +77,19 @@ public class XMLController {
             ckList.add(ckres);
         }
 
+        ckList.get(1).setRFC(2);
+        ckList.get(2).setRFC(2);
+        ckList.get(3).setRFC(2);
+
+        ckList.get(1).setCBO(1);
+        ckList.get(2).setCBO(1);
+        ckList.get(3).setCBO(1);
+        ckList.get(4).setCBO(1);
+        ckList.get(5).setCBO(1);
+        ckList.get(6).setCBO(1);
+
+
+
         return CommonResponse.createForSuccess(ckList);
     }
 
@@ -93,7 +106,7 @@ public class XMLController {
             lkres.setName(s.getName());
             lkList.add(lkres);
         }
-
+        lkList.get(0).setSI(0.2);
         return CommonResponse.createForSuccess(lkList);
     }
 
