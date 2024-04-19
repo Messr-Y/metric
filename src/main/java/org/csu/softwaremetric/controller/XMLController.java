@@ -6,7 +6,6 @@ import org.csu.softwaremetric.entity.BasicInfo;
 import org.csu.softwaremetric.entity.CK;
 import org.csu.softwaremetric.entity.Classes;
 import org.csu.softwaremetric.entity.LK;
-import org.csu.softwaremetric.service.InfoFlowService;
 import org.csu.softwaremetric.service.InfoService;
 import org.csu.softwaremetric.service.XMLService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,7 +76,8 @@ public class XMLController {
             ckres.setName(s.getName());
             ckList.add(ckres);
         }
-
+        // 因为计算公式部分时间紧张，未调试成功
+        // 因此暂时使用假数据修改部分字段
         ckList.get(1).setRFC(2);
         ckList.get(2).setRFC(2);
         ckList.get(3).setRFC(2);
@@ -87,8 +88,6 @@ public class XMLController {
         ckList.get(4).setCBO(1);
         ckList.get(5).setCBO(1);
         ckList.get(6).setCBO(1);
-
-
 
         return CommonResponse.createForSuccess(ckList);
     }
@@ -106,6 +105,7 @@ public class XMLController {
             lkres.setName(s.getName());
             lkList.add(lkres);
         }
+        // 使用使用假数据，同上
         lkList.get(0).setSI(0.2);
         return CommonResponse.createForSuccess(lkList);
     }
